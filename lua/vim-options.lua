@@ -37,6 +37,7 @@ vim.diagnostic.config({
 })
 
 vim.keymap.set('n', '<leader>s', vim.diagnostic.open_float, {desc = "Float message"})
+    
 
 --make them not copy
 vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d', { desc = "No yank delete" })
