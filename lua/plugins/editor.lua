@@ -26,13 +26,6 @@ return {
                 desc = "Find Files"
             },
             {
-                "<leader>b",
-                function()
-                    require("fzf-lua").buffers()
-                end,
-                desc = "Find Buffers"
-            },
-            {
                 "<leader>g",
                 function()
                     require("fzf-lua").grep()
@@ -56,6 +49,18 @@ return {
         }
     },
     {
+        'echasnovski/mini.splitjoin',
+        event = { 'BufReadPost', 'BufNewFile' },
+        version = '*',
+        config = function ()
+            require('mini.splitjoin').setup({
+                mappings = {
+                    toggle = 'gs',
+                }
+            })
+        end
+    },
+    {
         'echasnovski/mini.pairs',
         event = "InsertEnter",
         version = '*',
@@ -64,27 +69,6 @@ return {
             require('mini.pairs').setup()
         end
     },
-    --might be usefull for bigger projects, but to I don't need to use it rn
-    --[[ 	{
-		'stevearc/aerial.nvim',
-		event = { 'BufReadPost', 'BufNewFile' },
-
-		-- Optional dependencies
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-			"nvim-tree/nvim-web-devicons"
-		},
-
-		config = function()
-			require("aerial").setup({
-				on_attach = function(bufnr)
-					vim.keymap.set("n", "}", "<cmd>AerialPrev<CR>", { buffer = bufnr })
-					vim.keymap.set("n", "{", "<cmd>AerialNext<CR>", { buffer = bufnr })
-				end,
-			})
-			vim.keymap.set('n', '<leader>a', ":AerialToggle<cr>", { desc = "Toggle Aerial" })
-		end,
-	}, ]]
     {
         "mbbill/undotree",
         keys = { { "<leader>u", ":UndotreeToggle<CR>", desc = "Undo tree toggle" } }
@@ -98,5 +82,18 @@ return {
             { 'gc', mode = { 'n', 'v' } },
             { 'gb', mode = { 'n', 'v' } },
         },
+    },
+    {
+        "j-morano/buffer_manager.nvim",
+        dependencies = { 'nvim-lua/plenary.nvim' },
+        keys = {
+            {
+                '<leader>b',
+                function()
+                    require("buffer_manager.ui").toggle_quick_menu()
+                end,
+                desc = "open buffers"
+            }
+        }
     },
 }

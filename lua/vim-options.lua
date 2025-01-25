@@ -26,18 +26,18 @@ vim.g.mapleader = ' '
 
 --lsp_lines replaces them
 vim.diagnostic.config({
-	signs = {
-		text = {
-			[vim.diagnostic.severity.ERROR] = "",
-			[vim.diagnostic.severity.WARN]  = "",
-			[vim.diagnostic.severity.INFO]  = "",
-			[vim.diagnostic.severity.HINT]  = "",
-		},
-	},
+    signs = {
+        text = {
+            [vim.diagnostic.severity.ERROR] = "",
+            [vim.diagnostic.severity.WARN]  = "",
+            [vim.diagnostic.severity.INFO]  = "",
+            [vim.diagnostic.severity.HINT]  = "",
+        },
+    },
 })
 
-vim.keymap.set('n', '<leader>s', vim.diagnostic.open_float, {desc = "Float message"})
-    
+vim.keymap.set('n', '<leader>s', vim.diagnostic.open_float, { desc = "Float message" })
+vim.keymap.set('n', "<S-c>", vim.diagnostic.setloclist, { desc = "Show diagnostics in quickfix list" })
 
 --make them not copy
 vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d', { desc = "No yank delete" })
@@ -57,7 +57,7 @@ vim.keymap.set('n', '<S-e>', '<<', { desc = "Tabs backwards the selected line" }
 vim.keymap.set('v', 'e', '>', { desc = "Tabs the selected line" })
 vim.keymap.set('v', '<S-e>', '<', { desc = "Tabs backwards the selected line" })
 
-vim.keymap.set('n', '<cr>', 'o<esc>', { desc = "Makes new line" })
+vim.keymap.set('n', '<s-cr>', 'o<esc>', { desc = "Makes new line" })
 
 vim.keymap.set('n', '<S-s>', 'i<cr><esc>', { desc = "Makes new line at cursor" })
 vim.keymap.set('n', '<S-d>', 'O<esc>', { desc = "Makes new line above current line" })
@@ -76,10 +76,10 @@ vim.keymap.set('i', '<A-l>', '<esc><C-w>l', { desc = "Moves to right pane(insert
 
 vim.keymap.set('n', '<leader>fr', ':%s///g<left><left><left>', { desc = "Find and replace" })
 
-vim.keymap.set('n', '<leader>e', ':e .<cr>', {desc = "Open netrw"})
+vim.keymap.set('n', '<leader>e', ':e .<cr>', { desc = "Open netrw" })
 
-vim.keymap.set('n', '<C-d>', '<C-d>zz', {desc = "Centers CTRL-D"})
-vim.keymap.set('n', '<C-u>', '<C-u>zz', {desc = "Centers CTRL-U"})
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = "Centers CTRL-D" })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = "Centers CTRL-U" })
 
 --undo
 vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
