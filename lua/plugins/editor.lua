@@ -10,20 +10,17 @@ return {
     {
         "ibhagwan/fzf-lua",
         dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter" },
+        config = function()
+            require("fzf-lua").setup {
+                winopts = {
+                    fullscreen = true,
+                }
+            }
+        end,
         keys = {
             {
                 "<leader>ff",
                 function()
-                    if SETUP_FZF == nil then
-                        require("fzf-lua").setup {
-                            winopts = {
-                                fullscreen = true,
-                            }
-                        }
-
-                        SETUP_FZF = true
-                    end
-
                     require("fzf-lua").files()
                 end,
                 desc = "Find Files"
@@ -31,16 +28,6 @@ return {
             {
                 "<leader>b",
                 function()
-                    if SETUP_FZF == nil then
-                        require("fzf-lua").setup {
-                            winopts = {
-                                fullscreen = true,
-                            }
-                        }
-
-                        SETUP_FZF = true
-                    end
-
                     require("fzf-lua").buffers()
                 end,
                 desc = "Find Buffers"
@@ -48,16 +35,6 @@ return {
             {
                 "<leader>g",
                 function()
-                    if SETUP_FZF == nil then
-                        require("fzf-lua").setup {
-                            winopts = {
-                                fullscreen = true,
-                            }
-                        }
-
-                        SETUP_FZF = true
-                    end
-
                     require("fzf-lua").grep()
                 end,
                 desc = "Grep Text",
@@ -65,16 +42,6 @@ return {
             {
                 "<leader>fd",
                 function()
-                    if SETUP_FZF == nil then
-                        require("fzf-lua").setup {
-                            winopts = {
-                                fullscreen = true,
-                            }
-                        }
-
-                        SETUP_FZF = true
-                    end
-
                     require("fzf-lua").lsp_document_diagnostics()
                 end,
                 desc = "File Diagnostics"
@@ -82,16 +49,6 @@ return {
             {
                 "<leader>fD",
                 function()
-                    if SETUP_FZF == nil then
-                        require("fzf-lua").setup {
-                            winopts = {
-                                fullscreen = true,
-                            }
-                        }
-
-                        SETUP_FZF = true
-                    end
-
                     require("fzf-lua").lsp_workspace_diagnostics()
                 end,
                 desc = "Directory Diagnostics"
