@@ -117,6 +117,6 @@ vim.keymap.set('n', '<leader>n', function()
     if dir_sep == "\\" then
         os.execute("start \"\" \"https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s\"")
     else
-        os.execute("open https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s")
+        os.execute("open \"https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s\"")
     end
 end, {desc = "Hi"})
