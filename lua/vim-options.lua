@@ -115,7 +115,7 @@ vim.opt.undofile = true
 vim.keymap.set('n', '<leader>n', function()
     local dir_sep = package.config:sub(1, 1)
     if dir_sep == "\\" then
-        os.execute("start https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s")
+        os.execute("start \"\" \"https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s\"")
     else
         os.execute("open https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s")
     end

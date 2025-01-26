@@ -1,7 +1,7 @@
 return {
     {
         "ibhagwan/fzf-lua",
-        dependencies = { "echasnovski/mini.icons", --[[ "nvim-treesitter/nvim-treesitter" ]] },
+        dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter" },
         config = function()
             require("fzf-lua").setup {
             }
