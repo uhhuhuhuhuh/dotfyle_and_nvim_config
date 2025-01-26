@@ -26,5 +26,5 @@ mini.icons (Icons provider for many file types)
 <leader>g = Opens fzf-lua grep/find text
 <leader>o = Opens Oil.nvim
 <leader>s = Shows diagnostic message under mouse to be a floating window
-<leader>n = Opens the browser and goes into youtube with a relaxing song to listen to while coding
+<leader>n = Opens youtube url for a relaxing song to listen to while coding
 ```
