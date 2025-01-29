@@ -96,7 +96,7 @@ return {
             {
                 "<leader>t",
                 function()
-                    vim.cmd("NvimTreeOpen")
+                    vim.cmd("NvimTreeToggle")
                 end,
                 desc = "Open nvim tree"
             }
