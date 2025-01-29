@@ -64,15 +64,6 @@ vim.keymap.set('n', '<S-d>', 'O<esc>', { desc = "Makes new line above current li
 vim.keymap.set('n', '<S-j>', ':m +1<cr>', { desc = "Moves line down" })
 vim.keymap.set('n', '<S-k>', ':m -2<cr>', { desc = "Moves line up" })
 
-vim.keymap.set('n', '<A-j>', '<C-w>j', { desc = "Moves to down pane" })
-vim.keymap.set('i', '<A-j>', '<esc><C-w>j', { desc = "Moves to down pane(insert)" })
-vim.keymap.set('n', '<A-k>', '<C-w>k', { desc = "Moves to up pane" })
-vim.keymap.set('i', '<A-k>', '<esc><C-w>k', { desc = "Moves to up pane(insert)" })
-vim.keymap.set('n', '<A-h>', '<C-w>h', { desc = "Moves to left pane" })
-vim.keymap.set('i', '<A-h>', '<esc><C-w>h', { desc = "Moves to left pane(insert)" })
-vim.keymap.set('n', '<A-l>', '<C-w>l', { desc = "Moves to right pane" })
-vim.keymap.set('i', '<A-l>', '<esc><C-w>l', { desc = "Moves to right pane(insert)" })
-
 vim.keymap.set('n', '<leader>fr', ':%s///g<left><left><left>', { desc = "Find and replace" })
 
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = "Centers CTRL-D" })

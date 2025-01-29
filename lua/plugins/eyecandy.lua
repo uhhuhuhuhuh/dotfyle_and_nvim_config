@@ -1,5 +1,13 @@
 return {
     {
+        'echasnovski/mini.icons',
+        lazy = true,
+        version = '*',
+        config = function()
+            require('mini.icons').setup()
+        end
+    },
+    {
         "nvim-treesitter/nvim-treesitter",
         lazy = true,
         build = ":TSUpdate",
@@ -20,12 +28,6 @@ return {
             vim.g.everforest_background = 'hard'
 
             vim.cmd.colorscheme("everforest")
-
-            vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
-            vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
-            vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none' })
-            vim.api.nvim_set_hl(0, 'NormalNc', { bg = 'none' })
-            vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = 'none' })
         end
     },
 }

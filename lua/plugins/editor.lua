@@ -4,6 +4,9 @@ return {
         dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter" },
         config = function()
             require("fzf-lua").setup {
+                hls = {
+                    preview_normal = "Normal",
+                }
             }
         end,
         keys = {
@@ -78,5 +81,25 @@ return {
             { 'gc', mode = { 'n', 'v' } },
             { 'gb', mode = { 'n', 'v' } },
         },
+    },
+
+    --tbh probaly won't use this much
+    {
+        "nvim-tree/nvim-tree.lua",
+        dependencies = { "echasnovski/mini.icons" },
+
+        config = function()
+            require("nvim-tree").setup()
+        end,
+
+        keys = {
+            {
+                "<leader>t",
+                function()
+                    vim.cmd("NvimTreeOpen")
+                end,
+                desc = "Open nvim tree"
+            }
+        }
     },
 }
