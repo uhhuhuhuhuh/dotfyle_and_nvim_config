@@ -1,6 +1,5 @@
 # my neovim config
-this is my very minimul config with no ui clutter
-requires fzf
+This is my very minimul config with no ui clutter. However it does requires fzf
 
 ## List of my plugins
 ```
