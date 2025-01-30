@@ -24,6 +24,6 @@ mini.icons (Icons provider for many file types)
 <leader>ff = Opens fzf-lua files
 <leader>b = Opens fzf-lua buffers
 <leader>g = Opens fzf-lua grep/find text
-<leader>s = Shows diagnostic message under mouse to be a floating window
+<leader>s = Makes the diagnostic message under your mouse to be a floating window
 <leader>n = Opens a youtube url for a relaxing song to listen to while coding
 ```
