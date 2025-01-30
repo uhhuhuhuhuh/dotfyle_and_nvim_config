@@ -16,7 +16,6 @@ Comment.nvim (Commenting tool)
 gitsigns.nvim (Shows git signs like new lines and removed lines)
 vim-fugitive (Allows you to run git commands as a command ex. :Git status)
 undotree (Allows you to see undo tree)
-oil.nvim (Allows you to modify file system as if it were a buffer)
 mini.icons (Icons provider for many file types)
 ```
 ## Some useful to know keymappings
@@ -24,7 +23,6 @@ mini.icons (Icons provider for many file types)
 <leader>ff = Opens fzf-lua files
 <leader>b = Opens fzf-lua buffers
 <leader>g = Opens fzf-lua grep/find text
-<leader>o = Opens Oil.nvim
 <leader>s = Shows diagnostic message under mouse to be a floating window
 <leader>n = Opens a youtube url for a relaxing song to listen to while coding
 ```
