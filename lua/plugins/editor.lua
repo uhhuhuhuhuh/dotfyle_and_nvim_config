@@ -46,7 +46,6 @@ return {
     },
     {
         'echasnovski/mini.splitjoin',
-        event = { 'BufReadPost', 'BufNewFile' },
         version = '*',
         config = function()
             require('mini.splitjoin').setup({
@@ -54,7 +53,11 @@ return {
                     toggle = 'gs',
                 }
             })
-        end
+        end,
+
+        keys = {
+            { "gs" }
+        }
     },
     {
         'echasnovski/mini.pairs',
