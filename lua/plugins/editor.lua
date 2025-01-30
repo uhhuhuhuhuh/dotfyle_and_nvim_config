@@ -79,24 +79,4 @@ return {
             { 'gb', mode = { 'n', 'v' } },
         },
     },
-
-    --tbh probaly won't use this much
-    {
-        "nvim-tree/nvim-tree.lua",
-        dependencies = { "echasnovski/mini.icons" },
-
-        config = function()
-            require("nvim-tree").setup()
-        end,
-
-        keys = {
-            {
-                "<leader>t",
-                function()
-                    vim.cmd("NvimTreeToggle")
-                end,
-                desc = "Open nvim tree"
-            }
-        }
-    },
 }
