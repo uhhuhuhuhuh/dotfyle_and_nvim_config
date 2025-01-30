@@ -1,4 +1,6 @@
 # my neovim config
+this is my very minimul config, with no ui clutter
+
 ## List of my plugins
 ```
 lazy.nvim (Plugin manager)
