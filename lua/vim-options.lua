@@ -73,6 +73,9 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = "Centers CTRL-U" })
 vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 vim.opt.undofile = true
 
+vim.keymap.set("n", "<leader>e", ":e .<cr>", { desc = "netrw" })
+
+vim.api.nvim_create_user_command("Update", "Lazy update", {})
 
 
 
@@ -110,4 +113,4 @@ vim.keymap.set('n', '<leader>n', function()
     else
         os.execute("open \"https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s\"")
     end
-end, {desc = "Hi"})
+end, { desc = "Hi" })

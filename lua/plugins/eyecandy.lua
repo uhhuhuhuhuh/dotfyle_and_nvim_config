@@ -21,7 +21,20 @@ return {
             })
         end
     },
+    --[[ {
+        "navarasu/onedark.nvim",
+        config = function ()
+            vim.cmd.colorscheme("onedark")
+        end
+    }, ]]
     {
+        "folke/tokyonight.nvim",
+        config = function()
+            require("tokyonight").setup()
+            vim.cmd.colorscheme("tokyonight-storm")
+        end
+    },
+    --[[ {
         "sainnhe/everforest",
         priority = 1000,
         config = function()
@@ -29,5 +42,5 @@ return {
 
             vim.cmd.colorscheme("everforest")
         end
-    },
+    }, ]]
 }

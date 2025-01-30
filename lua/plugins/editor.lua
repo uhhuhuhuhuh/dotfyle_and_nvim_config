@@ -2,12 +2,9 @@ return {
     {
         "ibhagwan/fzf-lua",
         dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter" },
+
         config = function()
-            require("fzf-lua").setup {
-                hls = {
-                    preview_normal = "Normal",
-                }
-            }
+            require("fzf-lua").setup()
         end,
         keys = {
             {
