@@ -1,5 +1,6 @@
 # my neovim config
-This is my very minimul config with no ui clutter. However it does requires fzf
+This is my very minimul config with no ui clutter.\
+~~However it does requires fzf~~ I now use mini.pick
 
 ## List of my plugins
 ```
@@ -23,9 +24,11 @@ mini.icons (Icons provider for many file types)
 ```
 ## Some useful to know keymappings
 ```
-<leader>ff = Opens fzf-lua files
-<leader>b = Opens fzf-lua buffers
-<leader>g = Opens fzf-lua grep/find text
-<leader>s = Makes the diagnostic message under your mouse to be a floating window
+<leader>ff = Opens mini.pick files
+<leader>b = Opens mini.pick buffers
+<leader>g = Opens mini.pick grep/find text
+<leader>y = Copy to clipboard
+<C-p> = Paste from system clipboard
+<leader>s = Makes the diagnostics message under your mouse turn into a floating window
 <leader>n = Opens a youtube url for a relaxing song to listen to while coding
 ```

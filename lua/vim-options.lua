@@ -54,7 +54,7 @@ vim.keymap.set('x', '<leader>p', '"_dP', { desc = "No yank paste" })
 
 --clipboard stuff
 vim.keymap.set({ 'n', 'v' }, '<leader>y', "\"+y", { desc = "Yank to clipboard" })
-vim.keymap.set('n', '<C-p>', "\"+p", { desc = "Paste from clipboard" })
+vim.keymap.set({ 'n', 'v' }, '<C-p>', "\"+p", { desc = "Paste from clipboard" })
 vim.keymap.set('x', '<leader><C-p>', "\"_d\"+p", { desc = "Paste from clipboard, and no copy" })
 
 vim.keymap.set('n', '<cr>', 'o<esc>', { desc = "Makes new line but stays in normal mode" })
