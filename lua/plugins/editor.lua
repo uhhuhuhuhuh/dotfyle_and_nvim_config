@@ -56,7 +56,7 @@ return {
         end,
 
         keys = {
-            { "gs" }
+            { "gs", mode = { 'n', 'x' } }
         }
     },
     {
@@ -78,8 +78,20 @@ return {
             require("Comment").setup()
         end,
         keys = {
-            { 'gc', mode = { 'n', 'v' } },
-            { 'gb', mode = { 'n', 'v' } },
+            { 'gc', mode = { 'n', 'x' } },
+            { 'gb', mode = { 'n', 'x' } },
+        },
+    },
+    {
+        "stevearc/aerial.nvim",
+        config = function()
+            require("aerial").setup()
+        end,
+
+        keys = {
+            { "<leader>a", ":AerialToggle<cr>", desc = "Toggle aerial" },
+            { "{",         ":AerialNext<cr>",   desc = "Aerial next" },
+            { "}",         ":AerialPrev<cr>",   desc = "Aerial next" },
         },
     },
 }
