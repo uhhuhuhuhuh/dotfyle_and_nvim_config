@@ -1,48 +1,32 @@
 return {
     {
-        "ibhagwan/fzf-lua",
-        dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter" },
-
+        'echasnovski/mini.extra',
+        version = '*',
+        lazy = true,
         config = function()
-            require("fzf-lua").setup()
+            require("mini.extra").setup()
+        end
+    },
+    {
+        'echasnovski/mini.pick',
+        dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter", 'echasnovski/mini.extra' },
+        version = '*',
+        config = function()
+            require("mini.pick").setup({
+                mappings = {
+                    move_down = "<C-j>",
+                    move_up = "<c-k>",
+                }
+            })
         end,
+
         keys = {
-            {
-                "<leader>ff",
-                function()
-                    require("fzf-lua").files()
-                end,
-                desc = "Find Files"
-            },
-            {
-                "<leader>b",
-                function()
-                    require("fzf-lua").buffers()
-                end,
-                desc = "Open buffers",
-            },
-            {
-                "<leader>g",
-                function()
-                    require("fzf-lua").grep()
-                end,
-                desc = "Grep Text",
-            },
-            {
-                "<leader>fd",
-                function()
-                    require("fzf-lua").lsp_document_diagnostics()
-                end,
-                desc = "File Diagnostics"
-            },
-            {
-                "<leader>fD",
-                function()
-                    require("fzf-lua").lsp_workspace_diagnostics()
-                end,
-                desc = "Directory Diagnostics"
-            },
-        }
+            { "<leader>ff", ":Pick files<cr>",                                         desc = "Find Files" },
+            { "<leader>b",  ":Pick buffers<cr>",                                       desc = "Open buffers" },
+            { "<leader>fd", function() require("mini.extra").pickers.diagnostic() end, desc = "File diagnostic" },
+            { "<leader>g",  ":Pick grep<cr>",                                          desc = "Grep Text" },
+            { "<leader>t",  function() require("mini.extra").pickers.explorer() end,   desc = "File explorer" },
+        },
     },
     {
         'echasnovski/mini.splitjoin',
