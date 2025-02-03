@@ -1,13 +1,5 @@
 return {
     {
-        'echasnovski/mini.extra',
-        version = '*',
-        lazy = true,
-        config = function()
-            require("mini.extra").setup()
-        end
-    },
-    {
         'echasnovski/mini.pick',
         dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter", 'echasnovski/mini.extra' },
         version = '*',
@@ -21,11 +13,9 @@ return {
         end,
 
         keys = {
-            { "<leader>ff", ":Pick files<cr>",                                         desc = "Find Files" },
-            { "<leader>b",  ":Pick buffers<cr>",                                       desc = "Open buffers" },
-            { "<leader>fd", function() require("mini.extra").pickers.diagnostic() end, desc = "File diagnostic" },
-            { "<leader>g",  ":Pick grep<cr>",                                          desc = "Grep Text" },
-            { "<leader>t",  function() require("mini.extra").pickers.explorer() end,   desc = "File explorer" },
+            { "<leader>ff", ":Pick files<cr>",   desc = "Find Files" },
+            { "<leader>b",  ":Pick buffers<cr>", desc = "Open buffers" },
+            { "<leader>g",  ":Pick grep<cr>",    desc = "Grep Text" },
         },
     },
     {

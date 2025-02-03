@@ -25,7 +25,7 @@ return {
             lspconfig["lua_ls"].setup({ capabilities = capabilities })
             lspconfig["clangd"].setup({ capabilities = capabilities })
             lspconfig["gopls"].setup({ capabilities = capabilities })
-            lspconfig["rust_analyzer"].setup({ capabilities = capabilities })
+            lspconfig["rust_analyzer"].setup({capabilities = capabilities,})
 
             vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover, {})
             vim.keymap.set('n', '<C-f>', vim.lsp.buf.format, {})
