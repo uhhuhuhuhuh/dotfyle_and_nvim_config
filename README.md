@@ -17,6 +17,7 @@ mini.extra (Extra stuff for mini.pick)
 mini.pairs (Autopairs)
 Comment.nvim (Commenting tool)
 vim-fugitive (Allows you to run git commands as a command ex. :Git status)
+gitsigns.nvim (Git signs)
 undotree (Allows you to see undo tree)
 mini.icons (Icons provider for many file types)
 ```
@@ -34,4 +35,5 @@ mini.icons (Icons provider for many file types)
 ```
 mini.splitjoin (Splijoin tool)
 dashboard-nvim (Start up screen)
+nvim-tree.lua (File system/tree)
 ```

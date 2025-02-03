@@ -1,7 +1,7 @@
 return {
     {
         'echasnovski/mini.pick',
-        dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter" },
+        dependencies = { "nvim-tree/nvim-web-devicons", "nvim-treesitter/nvim-treesitter" },
         version = '*',
         config = function()
             require("mini.pick").setup({

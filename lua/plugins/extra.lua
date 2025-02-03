@@ -71,7 +71,7 @@ return {
                             desc_hl = "String",
                             key = 'n',
                             key_hl = "Number",
-                            action = "e ."
+                            action = "e .",
                         },
                         {
                             icon = " ",
@@ -112,6 +112,19 @@ return {
                 }
             })
         end
-    }
+    },
+    ]]
+    --[[
+    {
+        "nvim-tree/nvim-tree.lua",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("nvim-tree").setup()
+        end,
+
+        keys = {
+            { "<leader>t", ":NvimTreeToggle<cr>", desc = "Toggles nvim-tree" },
+        },
+    },
     ]]
 }
