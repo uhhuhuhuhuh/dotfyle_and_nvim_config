@@ -54,7 +54,12 @@ return {
                             keymap = '<leader>ff',
                             key_hl = 'Number',
                             action = function()
-                                require("mini.pick").setup()
+                                require("mini.pick").setup({
+                                    mappings = {
+                                    move_down = "<C-j>",
+                                    move_up = "<c-k>",
+                                }
+                                })
                                 vim.cmd("Pick files")
                             end
                         },
