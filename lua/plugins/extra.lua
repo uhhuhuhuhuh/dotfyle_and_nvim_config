@@ -1,23 +1,6 @@
 return {
     --[[
     {
-        'echasnovski/mini.splitjoin',
-        version = '*',
-        config = function()
-            require('mini.splitjoin').setup({
-                mappings = {
-                    toggle = 'gs',
-                }
-            })
-        end,
-
-        keys = {
-            { "gs", mode = { 'n', 'x' } }
-        }
-    },
-    ]]
-    --[[
-    {
         'nvimdev/dashboard-nvim',
         event = 'VimEnter',
         config = function()
@@ -139,6 +122,21 @@ return {
             { "{",         ":AerialNext<cr>",   desc = "Aerial next" },
             { "}",         ":AerialPrev<cr>",   desc = "Aerial next" },
         },
+    },
+    --]]
+    --[[
+    {
+        "akinsho/toggleterm.nvim",
+        cmd = "ToggleTerm",
+        version = '*',
+
+        config = function()
+            require('toggleterm').setup()
+        end,
+        keys = {
+            { "<C-\\>",         ":ToggleTerm<cr>",                            desc = "Toggle Term" },
+            { "<leader><C-\\>", ":ToggleTerm size=55 direction=vertical<cr>", desc = "Toggle Term vertical" }
+        }
     },
     --]]
 }

@@ -18,7 +18,8 @@ Comment.nvim (Commenting tool)
 vim-fugitive (Allows you to run git commands as a command ex. :Git status)
 gitsigns.nvim (Git signs)
 undotree (Allows you to see undo tree)
-mini.icons (Icons provider for many file types)
+mini.splitjoin (Splijoin tool)
+nvim-tree/nvim-web-devicons (Icon provider)
 ```
 ## Some useful to know keymappings
 ```
@@ -32,8 +33,8 @@ mini.icons (Icons provider for many file types)
 ```
 ### Extra Plugins(not installed by default/commented out)
 ```
-mini.splitjoin (Splijoin tool)
 dashboard-nvim (Start up screen)
 nvim-tree.lua (File system/tree)
 aerial.nvim (A code outline window)
+toggleterm.nvim (A terminal manager)
 ```
