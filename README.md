@@ -1,7 +1,6 @@
 # my neovim config
 This is my very minimul config with no ui clutter.\
-~~However it does requires fzf~~ I now use mini.pick
-
+However it does requires ~~fzf~~ ripgrep because mini.pick will use git to find files
 ## List of my plugins
 ```
 lazy.nvim (Plugin manager)
