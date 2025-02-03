@@ -1,6 +1,6 @@
 # my neovim config
 This is my very minimul config with no ui clutter.\
-However it does requires ~~fzf~~ ripgrep because mini.pick will use git to find files
+However it does requires ~~fzf~~ ripgrep because mini.pick will use git to find files if you don't have rg
 ## List of my plugins
 ```
 lazy.nvim (Plugin manager)
@@ -15,7 +15,6 @@ friendly-snippets (Provider of snippets for many languages)
 mini.pick (Fuzzy finder)
 mini.extra (Extra stuff for mini.pick)
 mini.pairs (Autopairs)
-mini.splitjoin (Splijoin tool)
 Comment.nvim (Commenting tool)
 vim-fugitive (Allows you to run git commands as a command ex. :Git status)
 undotree (Allows you to see undo tree)
@@ -30,4 +29,9 @@ mini.icons (Icons provider for many file types)
 <C-p> = Paste from system clipboard
 <leader>s = Makes the diagnostics message under your mouse turn into a floating window
 <leader>n = Opens a youtube url for a relaxing song to listen to while coding
+```
+### Extra Plugins(not installed by default)
+```
+mini.splitjoin (Splijoin tool)
+dashboard-nvim (Start up screen)
 ```

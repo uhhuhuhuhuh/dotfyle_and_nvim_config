@@ -1,7 +1,7 @@
 return {
     {
         'echasnovski/mini.pick',
-        dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter", 'echasnovski/mini.extra' },
+        dependencies = { "echasnovski/mini.icons", "nvim-treesitter/nvim-treesitter" },
         version = '*',
         config = function()
             require("mini.pick").setup({
@@ -17,21 +17,6 @@ return {
             { "<leader>b",  ":Pick buffers<cr>", desc = "Open buffers" },
             { "<leader>g",  ":Pick grep<cr>",    desc = "Grep Text" },
         },
-    },
-    {
-        'echasnovski/mini.splitjoin',
-        version = '*',
-        config = function()
-            require('mini.splitjoin').setup({
-                mappings = {
-                    toggle = 'gs',
-                }
-            })
-        end,
-
-        keys = {
-            { "gs", mode = { 'n', 'x' } }
-        }
     },
     {
         'echasnovski/mini.pairs',
