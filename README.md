@@ -30,7 +30,7 @@ mini.icons (Icons provider for many file types)
 <leader>s = Makes the diagnostics message under your mouse turn into a floating window
 <leader>n = Opens a youtube url for a relaxing song to listen to while coding
 ```
-### Extra Plugins(not installed by default)
+### Extra Plugins(not installed by default/commented out)
 ```
 mini.splitjoin (Splijoin tool)
 dashboard-nvim (Start up screen)
