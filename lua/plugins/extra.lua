@@ -127,4 +127,18 @@ return {
         },
     },
     ]]
+    --[[
+    {
+        "stevearc/aerial.nvim",
+        config = function()
+            require("aerial").setup()
+        end,
+
+        keys = {
+            { "<leader>a", ":AerialToggle<cr>", desc = "Toggle aerial" },
+            { "{",         ":AerialNext<cr>",   desc = "Aerial next" },
+            { "}",         ":AerialPrev<cr>",   desc = "Aerial next" },
+        },
+    },
+    --]]
 }
