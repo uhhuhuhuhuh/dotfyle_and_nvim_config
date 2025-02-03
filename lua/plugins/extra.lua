@@ -24,6 +24,7 @@ return {
             require("dashboard").setup({
                 theme = "doom",
                 config = {
+                    -- trust me this looks good
                     header = {
                         "",
                         "",
