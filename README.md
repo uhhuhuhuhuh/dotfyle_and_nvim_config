@@ -23,7 +23,7 @@ nvim-tree/nvim-web-devicons (Icon provider)
 ```
 ## Some useful to know keymappings
 ```
-<leader>ff = Opens mini.pick files
+<leader>f = Opens mini.pick files
 <leader>b = Opens mini.pick buffers
 <leader>g = Opens mini.pick grep/find text
 <leader>y = Copy to clipboard

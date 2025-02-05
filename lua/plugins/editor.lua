@@ -13,7 +13,7 @@ return {
         end,
 
         keys = {
-            { "<leader>ff", ":Pick files<cr>",   desc = "Find Files" },
+            { "<leader>f", ":Pick files<cr>",   desc = "Find Files" },
             { "<leader>b",  ":Pick buffers<cr>", desc = "Open buffers" },
             { "<leader>g",  ":Pick grep<cr>",    desc = "Grep Text" },
         },

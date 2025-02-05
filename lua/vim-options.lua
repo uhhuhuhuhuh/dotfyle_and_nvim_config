@@ -64,8 +64,6 @@ vim.keymap.set('n', '<S-d>', 'O<esc>', { desc = "Makes new line above current li
 vim.keymap.set('n', '<S-j>', ':m +1<cr>', { desc = "Moves line down" })
 vim.keymap.set('n', '<S-k>', ':m -2<cr>', { desc = "Moves line up" })
 
-vim.keymap.set('n', '<leader>fr', ':%s///g<left><left><left>', { desc = "Find and replace" })
-
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = "Centers CTRL-D" })
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = "Centers CTRL-U" })
 

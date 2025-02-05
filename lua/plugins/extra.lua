@@ -35,7 +35,7 @@ return {
                             desc = 'Find File',
                             desc_hl = 'String',
                             key = 'f',
-                            keymap = '<leader>ff',
+                            keymap = '<leader>f',
                             key_hl = 'Number',
                             action = function()
                                 require("mini.pick").setup({
