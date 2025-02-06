@@ -38,13 +38,8 @@ return {
                             keymap = '<leader>f',
                             key_hl = 'Number',
                             action = function()
-                                require("mini.pick").setup({
-                                    mappings = {
-                                    move_down = "<C-j>",
-                                    move_up = "<c-k>",
-                                }
-                                })
-                                vim.cmd("Pick files")
+                                require("fzf-lua").setup({ "ivy" })
+                                require("fzf-lua").files({ previewer = false })
                             end
                         },
                         {
