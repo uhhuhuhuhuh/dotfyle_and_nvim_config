@@ -2,7 +2,7 @@ return {
     {
         "lewis6991/gitsigns.nvim",
         cmd = "Gitsigns",
-        event = { 'BufReadPost', 'BufNewFile' },
+        -- event = { 'BufReadPost', 'BufNewFile' },
         config = function()
             require('gitsigns').setup({
                 signs = {
@@ -21,7 +21,11 @@ return {
                     changedelete = { text = "▎" },
                 },
             })
-        end
+        end,
+
+        keys = {
+            {"<leader>x", function() end, desc = "Turn on Gitsigns"}
+        }
     },
     {
         "tpope/vim-fugitive",

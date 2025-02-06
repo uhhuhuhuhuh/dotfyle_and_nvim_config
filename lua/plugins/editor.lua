@@ -1,22 +1,19 @@
 return {
     {
-        'echasnovski/mini.pick',
-        dependencies = { "nvim-tree/nvim-web-devicons", "nvim-treesitter/nvim-treesitter" },
-        version = '*',
+        "ibhagwan/fzf-lua",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+
         config = function()
-            require("mini.pick").setup({
-                mappings = {
-                    move_down = "<C-j>",
-                    move_up = "<c-k>",
-                }
+            require("fzf-lua").setup({
+                "ivy",
             })
         end,
 
         keys = {
-            { "<leader>f", ":Pick files<cr>",   desc = "Find Files" },
-            { "<leader>b",  ":Pick buffers<cr>", desc = "Open buffers" },
-            { "<leader>g",  ":Pick grep<cr>",    desc = "Grep Text" },
-        },
+            { "<leader>f", function() require("fzf-lua").files({ previewer = false }) end, desc = "Find Files" },
+            { "<leader>b", function() require("fzf-lua").buffers({ previewer = false }) end, desc = "Find Buffers" },
+            { "<leader>g", function() require("fzf-lua").grep({ previewer = false }) end,  desc = "Grep text" }
+        }
     },
     {
         'echasnovski/mini.pairs',
