@@ -21,6 +21,10 @@ vim.opt.colorcolumn = "100"
 
 vim.opt.scrolloff = 8
 
+vim.opt.foldmethod = "indent"
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+
 vim.g.mapleader = ' '
 
 --lsp_lines replaces them
