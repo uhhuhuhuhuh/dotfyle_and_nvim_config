@@ -1,6 +1,14 @@
 # my neovim config
 This is my very minimul config with no ui clutter.\
 However it does requires fzf, and ripgrep(rg)
+
+## Installation
+```
+git clone https://github.com/uhhuhuhuhuh/neovimConfig ~/.config/nvim # use %userprofile%\AppData\Local\nvim if you use windows
+rm ~/.config/nvim/lazy-lock.json # use %userpfile%\AppData\Local\nvim\lazy-lock.json if you use windows
+nvim # load it up and have fun :)
+```
+
 ## List of my plugins
 ```
 lazy.nvim (Plugin manager)
