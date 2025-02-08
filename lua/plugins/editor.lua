@@ -10,7 +10,7 @@ return {
         keys = {
             { "<leader>f", function() require("fzf-lua").files({ previewer = false }) end,   desc = "Find Files" },
             { "<leader>b", function() require("fzf-lua").buffers({ previewer = false }) end, desc = "Find Buffers" },
-            { "<leader>g", function() require("fzf-lua").grep({ previewer = false }) end,    desc = "Grep text" }
+            { "<leader>g", function() require("fzf-lua").grep() end,                         desc = "Grep text" }
         }
     },
     {
