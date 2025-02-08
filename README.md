@@ -14,7 +14,7 @@ nvim # load it up and have fun :)
 ## List of my plugins
 ```
 lazy.nvim (Plugin manager)
-everforest (Colorscheme)
+onedark.nvim (Colorscheme)
 none-ls (Allows neovim to communicate with lsp)
 lsp-config (Configures lsp for u, I think)
 nvim-treesitter (Better highligting and indenting suuport for each lang)
