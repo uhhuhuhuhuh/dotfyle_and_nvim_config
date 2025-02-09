@@ -7,28 +7,28 @@ However it does requires fzf, and ripgrep(rg)
 git clone https://github.com/uhhuhuhuhuh/neovimConfig ~/.config/nvim
 # use %userprofile%\AppData\Local\nvim instead of ~/.config/nvim if you use windows
 rm ~/.config/nvim/lazy-lock.json
-# use %userprofile%\AppData\Local\nvim\lazy-lock.json instead of ~/.config/nvim/lazy-lock.json if you use windows
+# use %userprofile%\AppData\Local\nvim\lazy-lock.json instead if you use windows
 nvim # load it up and have fun :)
 ```
 
 ## List of my plugins
 ```
-lazy.nvim (Plugin manager)
-onedark.nvim (Colorscheme)
-none-ls (Allows neovim to communicate with lsp)
-lsp-config (Configures lsp for u, I think)
-nvim-treesitter (Better highligting and indenting suuport for each lang)
-blink.cmp (Completions)
-Luasnip (Snippet engine)
-friendly-snippets (Provider of snippets for many languages)
-fzf-lua (Fuzzy finder)
-mini.pairs (Autopairs)
-Comment.nvim (Commenting tool)
-vim-fugitive (Allows you to run git commands as a command ex. :Git status)
-gitsigns.nvim (Git signs)
-undotree (Allows you to see undo tree)
-mini.splitjoin (Splijoin tool)
-nvim-tree/nvim-web-devicons (Icon provider)
+lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
+onedark.nvim (Dark and Light Themes for neovim based on Atom One Dark & Light)
+none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
+nvim-lspconfig (Quickstart configs for Nvim LSP )
+nvim-treesitter (Nvim Treesitter configurations and abstraction layer)
+blink.cmp (Performant, batteries-included completion plugin for Neovim )
+Luasnip (Snippet Engine for Neovim written in Lua)
+friendly-snippets (Set of preconfigured snippets for different languages)
+fzf-lua (fzf.vim [wrapper of fzf for vim] written in lua)
+mini.pairs (Neovim Lua plugin to automatically manage character pairs)
+Comment.nvim (Smart and powerful comment plugin for neovim)
+vim-fugitive (A Git wrapper so awesome, it should be illegal )
+gitsigns.nvim (Git integration for buffers )
+undotree (The undo history visualizer for VIM)
+mini.splitjoin (Neovim Lua plugin to split and join arguments)
+nvim-web-devicons (Provides Nerd Font icons [glyphs] for use by neovim plugins)
 ```
 ## Some useful to know keymappings
 ```
@@ -42,8 +42,9 @@ nvim-tree/nvim-web-devicons (Icon provider)
 ```
 ### Extra Plugins(not installed by default/commented out)
 ```
-dashboard-nvim (Start up screen)
-nvim-tree.lua (File system/tree)
-aerial.nvim (A code outline window)
-toggleterm.nvim (A terminal manager)
+dashboard-nvim (Fancy and Blazing Fast start screen plugin of neovim )
+nvim-tree.lua (A File Explorer For Neovim Written In Lua)
+aerial.nvim (A code outline window for skimming and quick navigation)
+toggleterm.nvim (A neovim plugin to persist and toggle multiple terminals)
+nvim-notify (A fancy, configurable, notification manager for NeoVim)
 ```

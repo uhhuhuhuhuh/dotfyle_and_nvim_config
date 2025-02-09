@@ -118,7 +118,7 @@ return {
             { "}",         ":AerialPrev<cr>",   desc = "Aerial next" },
         },
     },
-    --]]
+    ]]
     --[[
     {
         "akinsho/toggleterm.nvim",
@@ -133,5 +133,16 @@ return {
             { "<leader><C-\\>", ":ToggleTerm size=55 direction=vertical<cr>", desc = "Toggle Term vertical" }
         }
     },
-    --]]
+    ]]
+    --[[
+    {
+        "rcarriga/nvim-notify",
+        config = function()
+            require("notify").setup({
+                background_colour = "#000000",
+            })
+            vim.notify = require('notify')
+        end
+    },
+    ]]
 }
