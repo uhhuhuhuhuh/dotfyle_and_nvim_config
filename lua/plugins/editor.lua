@@ -37,18 +37,15 @@ return {
         },
     },
     {
-        'echasnovski/mini.splitjoin',
-        version = '*',
+        "stevearc/aerial.nvim",
         config = function()
-            require('mini.splitjoin').setup({
-                mappings = {
-                    toggle = 'gs',
-                }
-            })
+            require("aerial").setup()
         end,
 
         keys = {
-            { "gs", mode = { 'n', 'x' } }
-        }
+            { "<leader>a", ":AerialToggle<cr>", desc = "Toggle aerial" },
+            { "{",         ":AerialNext<cr>",   desc = "Aerial next" },
+            { "}",         ":AerialPrev<cr>",   desc = "Aerial next" },
+        },
     },
 }
