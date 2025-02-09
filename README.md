@@ -42,7 +42,7 @@ nvim-web-devicons (Provides Nerd Font icons [glyphs] for use by neovim plugins)
 ```
 ### Extra Plugins(not installed by default/commented out)
 ```
-dashboard-nvim (Fancy and Blazing Fast start screen plugin of neovim )
+dashboard-nvim (Fancy and Blazing Fast start screen plugin of neovim)
 nvim-tree.lua (A File Explorer For Neovim Written In Lua)
 aerial.nvim (A code outline window for skimming and quick navigation)
 toggleterm.nvim (A neovim plugin to persist and toggle multiple terminals)
