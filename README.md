@@ -15,7 +15,7 @@ nvim # load it up and have fun :)
 ## List of my plugins
 ```
 lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
-onedark.nvim (Dark and Light Themes for neovim based on Atom One Dark & Light)
+everforest (🌲 Comfortable & Pleasant Color Scheme for Vim )
 none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
 nvim-lspconfig (Quickstart configs for Nvim LSP )
 nvim-treesitter (Nvim Treesitter configurations and abstraction layer)
