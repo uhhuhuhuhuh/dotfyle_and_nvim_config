@@ -1,6 +1,7 @@
 # my neovim config
 This is my very minimul config with no ui clutter.\
-However it does requires fzf, and ripgrep(rg)
+However it does requires fzf, and ripgrep(rg) \
+(also if you want a solid/opaque background delete lines 25-28 in lua/plugins/eyecandy.lua)
 
 ## Installation
 Use powershell if you are using windows
@@ -15,7 +16,7 @@ nvim # load it up and have fun :)
 ## List of my plugins
 ```
 lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
-everforest (🌲 Comfortable & Pleasant Color Scheme for Vim )
+everforest (🌲 Comfortable & Pleasant Color Scheme for Vim)
 none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
 nvim-lspconfig (Quickstart configs for Nvim LSP )
 nvim-treesitter (Nvim Treesitter configurations and abstraction layer)
