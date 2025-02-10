@@ -14,6 +14,7 @@ nvim # load it up and have fun :)
 ```
 
 ## List of my plugins
+I just copied and pasted their about section
 ```
 lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
 everforest (🌲 Comfortable & Pleasant Color Scheme for Vim)
