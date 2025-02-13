@@ -17,6 +17,11 @@ return {
         "neovim/nvim-lspconfig",
         event = "BufEnter",
         dependencies = { 'saghen/blink.cmp' },
+        opts = {
+            diagnostics = {
+                signs = false,
+            },
+        },
 
         config = function()
             local lspconfig = require("lspconfig")
@@ -25,8 +30,8 @@ return {
             lspconfig["lua_ls"].setup({ capabilities = capabilities })
             lspconfig["clangd"].setup({ capabilities = capabilities })
             lspconfig["gopls"].setup({ capabilities = capabilities })
-            lspconfig["rust_analyzer"].setup({capabilities = capabilities,})
-            lspconfig["jdtls"].setup({capabilities = capabilities,})
+            lspconfig["rust_analyzer"].setup({ capabilities = capabilities, })
+            lspconfig["jdtls"].setup({ capabilities = capabilities, })
 
             vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover, {})
             vim.keymap.set('n', '<C-f>', vim.lsp.buf.format, {})

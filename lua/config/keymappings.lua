@@ -30,121 +30,45 @@ vim.opt.undofile = true
 
 vim.keymap.set("n", "<leader>e", ":e .<cr>", { desc = "netrw" })
 
-vim.api.nvim_create_user_command("Update", "Lazy update", {})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-vim.keymap.set('n', '<leader>n', function()
-    local dir_sep = package.config:sub(1, 1)
-    if dir_sep == "\\" then
-        os.execute("start \"\" \"https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s\"")
+vim.keymap.set("n", "<leader>l", function()
+    if vim.diagnostic.config().virtual_text then
+        vim.diagnostic.config({
+            virtual_text = false,
+            signs = {
+                text = {
+                    [vim.diagnostic.severity.ERROR] = "",
+                    [vim.diagnostic.severity.WARN]  = "",
+                    [vim.diagnostic.severity.INFO]  = "",
+                    [vim.diagnostic.severity.HINT]  = "",
+                },
+                numhl = {
+                    [vim.diagnostic.severity.WARN] = 'WarningMsg',
+                    [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+                    [vim.diagnostic.severity.INFO] = 'DiagnosticInfo',
+                    [vim.diagnostic.severity.HINT] = 'DiagnosticHint',
+
+                },
+            },
+        })
     else
-        os.execute("open \"https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=42s\"")
+        vim.diagnostic.config({
+            virtual_text = true,
+            signs = {
+                text = {
+                    [vim.diagnostic.severity.ERROR] = "",
+                    [vim.diagnostic.severity.WARN]  = "",
+                    [vim.diagnostic.severity.INFO]  = "",
+                    [vim.diagnostic.severity.HINT]  = "󰰄",
+                },
+                numhl = {
+                    [vim.diagnostic.severity.WARN] = 'WarningMsg',
+                    [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+                    [vim.diagnostic.severity.INFO] = 'DiagnosticInfo',
+                    [vim.diagnostic.severity.HINT] = 'DiagnosticHint',
+
+                },
+            },
+        })
     end
-end, { desc = "Hi" })
+end, { desc = "Toggle diagnostic messages" })

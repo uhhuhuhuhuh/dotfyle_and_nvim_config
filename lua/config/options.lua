@@ -16,7 +16,7 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "100"
 
 vim.opt.scrolloff = 8
@@ -27,14 +27,20 @@ vim.opt.foldlevelstart = 99
 
 vim.g.mapleader = ' '
 
---lsp_lines replaces them
 vim.diagnostic.config({
     signs = {
         text = {
-            [vim.diagnostic.severity.ERROR] = "",
-            [vim.diagnostic.severity.WARN]  = "",
-            [vim.diagnostic.severity.INFO]  = "",
-            [vim.diagnostic.severity.HINT]  = "",
+            [vim.diagnostic.severity.ERROR] = "",
+            [vim.diagnostic.severity.WARN]  = "",
+            [vim.diagnostic.severity.INFO]  = "",
+            [vim.diagnostic.severity.HINT]  = "󰰄",
+        },
+        numhl = {
+            [vim.diagnostic.severity.WARN] = 'WarningMsg',
+            [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+            [vim.diagnostic.severity.INFO] = 'DiagnosticInfo',
+            [vim.diagnostic.severity.HINT] = 'DiagnosticHint',
+
         },
     },
     float = {
