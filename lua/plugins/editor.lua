@@ -67,18 +67,7 @@ return {
         },
     },
     {
-        'echasnovski/mini.splitjoin',
-        version = '*',
-        config = function()
-            require('mini.splitjoin').setup({
-                mappings = {
-                    toggle = 'gs',
-                }
-            })
-        end,
-
-        keys = {
-            { "gs", mode = { 'n', 'x' } }
-        }
+        "tpope/vim-fugitive",
+        cmd = "Git",
     },
 }

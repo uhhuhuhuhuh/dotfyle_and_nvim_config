@@ -30,7 +30,6 @@ vim.opt.undofile = true
 
 vim.keymap.set("n", "<leader>e", ":e .<cr>", { desc = "netrw" })
 
-
 vim.keymap.set("n", "<leader>l", function()
     if vim.diagnostic.config().virtual_text then
         vim.diagnostic.config({
@@ -47,7 +46,6 @@ vim.keymap.set("n", "<leader>l", function()
                     [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
                     [vim.diagnostic.severity.INFO] = 'DiagnosticInfo',
                     [vim.diagnostic.severity.HINT] = 'DiagnosticHint',
-
                 },
             },
         })

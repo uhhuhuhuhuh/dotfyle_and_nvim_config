@@ -28,11 +28,9 @@ telescope.nvim (fzf.vim [wrapper of fzf for vim] written in lua)
 mini.pairs (Neovim Lua plugin to automatically manage character pairs)
 Comment.nvim (Smart and powerful comment plugin for neovim)
 vim-fugitive (A Git wrapper so awesome, it should be illegal )
-gitsigns.nvim (Git integration for buffers )
 undotree (The undo history visualizer for VIM)
 nvim-web-devicons (Provides Nerd Font icons [glyphs] for use by neovim plugins)
 aerial.nvim (A code outline window for skimming and quick navigation)
-mini.splitjoin (Neovim Lua plugin to split and join arguments)
 plenary.nvim (All the lua functions I don't want to write twice) basiaclly a neovim library
 ```
 ## Some useful to know keymappings
