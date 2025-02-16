@@ -14,12 +14,12 @@ nvim # load it up and have fun :)
 ```
 
 ## List of my plugins
-I just copied and pasted their about section
+<sub><sup>pst I just copied and pasted their about section</sub></sup>
 ```
 lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
 everforest (🌲 Comfortable & Pleasant Color Scheme for Vim)
 none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
-nvim-lspconfig (Quickstart configs for Nvim LSP )
+nvim-lspconfig (Quickstart configs for Nvim LSP)
 nvim-treesitter (Nvim Treesitter configurations and abstraction layer)
 blink.cmp (Performant, batteries-included completion plugin for Neovim )
 Luasnip (Snippet Engine for Neovim written in Lua)
