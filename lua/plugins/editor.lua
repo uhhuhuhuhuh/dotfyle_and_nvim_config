@@ -1,5 +1,58 @@
 return {
     {
+        "L3MON4D3/LuaSnip",
+        lazy = true,
+        dependencies = {
+            "rafamadriz/friendly-snippets",
+        },
+        opts = {
+            history = true,
+            delete_check_events = "TextChanged",
+        },
+    },
+    {
+        'saghen/blink.cmp',
+        version = '0.*',
+        lazy = true,
+
+        dependecies = { "L3MON4D3/LuaSnip", },
+
+        config = function()
+            require("blink.cmp").setup({
+                completion = {
+                    list = {
+                        max_items = 10,
+                    },
+                    menu = {
+                        draw = {
+                            treesitter = { 'lsp' }
+                        }
+                    }
+                },
+
+                keymap = {
+                    preset = 'default',
+
+                    ['<C-k>'] = { 'show', 'show_documentation', 'hide_documentation' },
+                    ["<C-L>"] = { "snippet_forward", "fallback" },
+                    ["<C-J>"] = { "snippet_backward", "fallback" },
+                    ['<tab>'] = { "select_and_accept", "fallback" },
+                    ['<C-e>'] = { "cancel", "fallback" },
+                },
+
+
+                snippets = { preset = 'luasnip' },
+
+                -- remove completions for cmdline
+                cmdline = { sources = {} },
+
+                sources = {
+                    default = { 'lsp', 'path', 'snippets', 'buffer' },
+                }
+            })
+        end,
+    },
+    {
         "nvim-telescope/telescope.nvim",
         branch = '0.1.x',
         dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
@@ -32,13 +85,11 @@ return {
         },
     },
     {
-        'echasnovski/mini.pairs',
+        'windwp/nvim-autopairs',
         event = "InsertEnter",
-        version = '*',
-
         config = function()
-            require('mini.pairs').setup()
-        end
+            require("nvim-autopairs").setup()
+        end,
     },
     {
         "mbbill/undotree",
@@ -55,19 +106,54 @@ return {
         },
     },
     {
+        "tpope/vim-fugitive",
+        cmd = "Git",
+    },
+    {
+        "folke/trouble.nvim",
+        cmd = "Trouble",
+        config = function()
+            require("trouble").setup()
+        end,
+        keys = {
+            { "<leader>w", ":Trouble diagnostics toggle<cr>",              desc = "Diagnostics (Trouble)", },
+            { "<leader>W", ":Trouble diagnostics toggle filter.buf=0<cr>", desc = "Buffer Diagnostics (Trouble)", },
+        }
+    },
+    {
         "stevearc/aerial.nvim",
+        dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
         config = function()
             require("aerial").setup()
         end,
 
         keys = {
-            { "<leader>a", ":AerialToggle<cr>", desc = "Toggle aerial" },
-            { "{",         ":AerialNext<cr>",   desc = "Aerial next" },
-            { "}",         ":AerialPrev<cr>",   desc = "Aerial next" },
+            { "<leader>a", ":AerialToggle!<cr>", desc = "Open code outline" },
+            { "{",         ":AerialPrev<CR>",    desc = "Prev point Aerial" },
+            { "}",         ":AerialNext<CR>",    desc = "Next point Aerial" },
         },
     },
     {
-        "tpope/vim-fugitive",
-        cmd = "Git",
+        "echasnovski/mini.splitjoin",
+        config = function()
+            require('mini.splitjoin').setup({
+                mappings = {
+                    toggle = "gs",
+                },
+            })
+        end,
+
+        keys = { { "gs", desc = "Splitjoin" } }
+    },
+    {
+        "MagicDuck/grug-far.nvim",
+        cmd = "Grug",
+        config = function()
+            require("grug-far").setup()
+        end,
+
+        keys = {
+            { "<C-g>", function() require('grug-far').open() end, desc = "Open grug-far"}
+        }
     },
 }

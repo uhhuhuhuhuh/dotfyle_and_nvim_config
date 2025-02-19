@@ -19,7 +19,7 @@ return {
         config = function()
             vim.cmd.colorscheme("everforest")
 
-            -- make bg transparent
+            -- make background transparent
             -- I set so many hl groups just in case if you want to use another colorscheme
 
             vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

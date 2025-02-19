@@ -1,3 +1,5 @@
+vim.opt.guicursor = ""
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -5,6 +7,7 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true
+vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
@@ -26,6 +29,7 @@ vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 
 vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 vim.diagnostic.config({
     signs = {
@@ -34,13 +38,6 @@ vim.diagnostic.config({
             [vim.diagnostic.severity.WARN]  = "",
             [vim.diagnostic.severity.INFO]  = "",
             [vim.diagnostic.severity.HINT]  = "󰰄",
-        },
-        numhl = {
-            [vim.diagnostic.severity.WARN] = 'WarningMsg',
-            [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
-            [vim.diagnostic.severity.INFO] = 'DiagnosticInfo',
-            [vim.diagnostic.severity.HINT] = 'DiagnosticHint',
-
         },
     },
     float = {

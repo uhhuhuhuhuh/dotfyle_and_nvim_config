@@ -32,6 +32,8 @@ undotree (The undo history visualizer for VIM)
 nvim-web-devicons (Provides Nerd Font icons [glyphs] for use by neovim plugins)
 aerial.nvim (A code outline window for skimming and quick navigation)
 plenary.nvim (All the lua functions I don't want to write twice) basiaclly a neovim library
+mini.splitjoin (Neovim Lua plugin to split and join arguments)
+grug-far (Find And Replace plugin for neovim)
 ```
 ## Some useful to know keymappings
 ```

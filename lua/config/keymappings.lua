@@ -59,13 +59,6 @@ vim.keymap.set("n", "<leader>l", function()
                     [vim.diagnostic.severity.INFO]  = "",
                     [vim.diagnostic.severity.HINT]  = "󰰄",
                 },
-                numhl = {
-                    [vim.diagnostic.severity.WARN] = 'WarningMsg',
-                    [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
-                    [vim.diagnostic.severity.INFO] = 'DiagnosticInfo',
-                    [vim.diagnostic.severity.HINT] = 'DiagnosticHint',
-
-                },
             },
         })
     end
