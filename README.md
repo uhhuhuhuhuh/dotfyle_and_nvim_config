@@ -4,12 +4,16 @@ However it does requires ripgrep(rg) \
 (also if you want a solid/opaque background delete lines 25-28 in lua/plugins/eyecandy.lua)
 
 ## Installation
-Use powershell if you are using windows
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig ~/.config/nvim
-# use %userprofile%\AppData\Local\nvim instead of ~/.config/nvim if you use windows
 rm ~/.config/nvim/lazy-lock.json
-# use %userprofile%\AppData\Local\nvim\lazy-lock.json instead if you use windows
+nvim # load it up and have fun :)
+```
+###Windows
+Use cmd btw
+```
+git clone https://github.com/uhhuhuhuhuh/neovimConfig "%USERPROFILE%\AppData\Local\nvim"
+rm ~/.config/nvim/lazy-lock.json
 nvim # load it up and have fun :)
 ```
 
