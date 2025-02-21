@@ -25,7 +25,12 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = "Centers CTRL-D" })
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = "Centers CTRL-U" })
 
 --undo
-vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
+
+if vim.loop.os_uname ~= "Windows" then
+    vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
+else
+    vim.opt.undodir = os.getenv("%userprofile%") .. "/.nvim/undodir"
+end
 vim.opt.undofile = true
 
 vim.keymap.set("n", "<leader>e", ":e .<cr>", { desc = "netrw" })
