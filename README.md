@@ -6,14 +6,14 @@ However it does requires ripgrep(rg) \
 ## Installation
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig ~/.config/nvim
-rm ~/.config/nvim/lazy-lock.json
+rm ~/.config/nvim/lazy-lock.json ~/.config/nvim/.git
 nvim # load it up and have fun :)
 ```
 ### Windows
 Use cmd btw
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig "%USERPROFILE%\AppData\Local\nvim"
-rm ~/.config/nvim/lazy-lock.json
+rm ~/.config/nvim/lazy-lock.json ~/.config/nvim/.git
 nvim # load it up and have fun :)
 ```
 
