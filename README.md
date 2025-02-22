@@ -1,7 +1,7 @@
 # my neovim config
 This is my very minimul config with no ui clutter.\
 However it does requires ripgrep(rg) \
-(also if you want a solid/opaque background delete lines 25-28 in lua/plugins/eyecandy.lua)
+(also if you want a solid/opaque background delete line 20 in lua/plugins/eyecandy.lua)
 
 ## Installation
 ```
@@ -37,7 +37,6 @@ nvim-web-devicons (Provides Nerd Font icons [glyphs] for use by neovim plugins)
 aerial.nvim (A code outline window for skimming and quick navigation)
 plenary.nvim (All the lua functions I don't want to write twice) basiaclly a neovim library
 mini.splitjoin (Neovim Lua plugin to split and join arguments)
-grug-far (Find And Replace plugin for neovim)
 ```
 ## Some useful to know keymappings
 ```

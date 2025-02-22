@@ -23,21 +23,16 @@ return {
                     list = {
                         max_items = 10,
                     },
-                    menu = {
-                        draw = {
-                            treesitter = { 'lsp' }
-                        }
-                    }
                 },
 
                 keymap = {
                     preset = 'default',
 
-                    ['<C-k>'] = { 'show', 'show_documentation', 'hide_documentation' },
                     ["<C-L>"] = { "snippet_forward", "fallback" },
-                    ["<C-J>"] = { "snippet_backward", "fallback" },
-                    ['<tab>'] = { "select_and_accept", "fallback" },
-                    ['<C-e>'] = { "cancel", "fallback" },
+                    ["<C-J>"] = { "select_next", "fallback" },
+                    ['<C-K>'] = { "select_prev", "fallback" },
+                    ['<C-C>'] = { "cancel", "fallback" },
+                    ['<C-Y>'] = { 'select_and_accept', 'fallback' },
                 },
 
 
@@ -48,7 +43,7 @@ return {
 
                 sources = {
                     default = { 'lsp', 'path', 'snippets', 'buffer' },
-                }
+                },
             })
         end,
     },
@@ -144,16 +139,5 @@ return {
         end,
 
         keys = { { "gs", desc = "Splitjoin" } }
-    },
-    {
-        "MagicDuck/grug-far.nvim",
-        cmd = "Grug",
-        config = function()
-            require("grug-far").setup()
-        end,
-
-        keys = {
-            { "<C-g>", function() require('grug-far').open() end, desc = "Open grug-far"}
-        }
     },
 }
