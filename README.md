@@ -9,7 +9,7 @@ git clone https://github.com/uhhuhuhuhuh/neovimConfig ~/.config/nvim
 rm ~/.config/nvim/lazy-lock.json
 nvim # load it up and have fun :)
 ```
-###Windows
+### Windows
 Use cmd btw
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig "%USERPROFILE%\AppData\Local\nvim"
