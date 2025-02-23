@@ -4,9 +4,11 @@ However it does requires ripgrep(rg) \
 (also if you want a solid/opaque background delete line 20 in lua/plugins/eyecandy.lua)
 
 ## Installation
+### Linux && MacOS
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig ~/.config/nvim
 rm ~/.config/nvim/lazy-lock.json
+rm -rf ~/.config/nvim/.git
 ```
 ### Windows
 Use cmd btw
