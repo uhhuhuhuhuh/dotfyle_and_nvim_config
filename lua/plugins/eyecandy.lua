@@ -12,24 +12,10 @@ return {
             })
         end
     },
-    -- Atom colorscheme basically
     {
-        "navarasu/onedark.nvim",
-        priority = 1000,
+        "sainnhe/everforest",
         config = function()
-            require("onedark").setup({
-                colors = {
-                    -- make grey brighter
-                    grey = "#848484",
-                },
-                transparent = true,
-                code_style = {
-                    comments = "bold",
-                    keywords = "bold",
-                    functions = "italic",
-                },
-            })
-            vim.cmd.colorscheme("onedark")
-        end
+            vim.cmd.colorscheme("everforest")
+        end,
     },
 }

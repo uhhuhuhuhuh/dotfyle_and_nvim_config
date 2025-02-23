@@ -29,6 +29,7 @@ return {
                     preset = 'default',
 
                     ["<C-L>"] = { "snippet_forward", "fallback" },
+                    ["<C-E>"] = { "snippet_backward", "fallback" },
                     ["<C-J>"] = { "select_next", "fallback" },
                     ['<C-K>'] = { "select_prev", "fallback" },
                     ['<C-C>'] = { "cancel", "fallback" },
