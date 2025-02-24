@@ -52,6 +52,6 @@ vim.diagnostic.config({
 if vim.loop.os_uname().sysname ~= "Windows_NT" then
     vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 else
-    vim.opt.undodir = os.getenv("%userprofile%") .. "/.nvim/undodir"
+    vim.opt.undodir = os.getenv("USERPROFILE") .. "/.nvim/undodir"
 end
 vim.opt.undofile = true

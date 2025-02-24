@@ -14,7 +14,7 @@ rm -rf ~/.config/nvim/.git
 Use cmd btw
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig "%USERPROFILE%\AppData\Local\nvim"
-rm ~/.config/nvim/lazy-lock.json
+del "%USERPROFILE%\AppData\Local\nvim\lazy-lock.json"
 rmdir /s "%USERPROFILE%\AppData\Local\nvim\.git"
 ```
 
