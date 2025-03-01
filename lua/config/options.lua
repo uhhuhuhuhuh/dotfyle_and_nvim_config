@@ -24,9 +24,11 @@ vim.opt.colorcolumn = "100"
 
 vim.opt.scrolloff = 8
 
-vim.opt.foldmethod = "indent"
-vim.opt.foldlevel = 99
-vim.opt.foldlevelstart = 99
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+
+vim.opt.foldminlines = 150
+vim.opt.foldnestmax = 3
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -34,8 +36,8 @@ vim.g.maplocalleader = ' '
 vim.diagnostic.config({
     signs = {
         text = {
-            [vim.diagnostic.severity.ERROR] = "",
-            [vim.diagnostic.severity.WARN]  = "",
+            [vim.diagnostic.severity.ERROR] = "",
+            [vim.diagnostic.severity.WARN]  = "",
             [vim.diagnostic.severity.INFO]  = "",
             [vim.diagnostic.severity.HINT]  = "󰰄",
         },

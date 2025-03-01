@@ -31,6 +31,8 @@ return {
             lspconfig["gopls"].setup({ capabilities = capabilities })
             lspconfig["rust_analyzer"].setup({ capabilities = capabilities, })
             lspconfig["jdtls"].setup({ capabilities = capabilities, })
+            lspconfig["ts_ls"].setup({capabilities = capabilities})
+            lspconfig["pylsp"].setup({capabilities = capabilities})
 
             vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover, { desc = "Show documentation" })
             vim.keymap.set('n', '<C-f>', vim.lsp.buf.format, { desc = "Format" })

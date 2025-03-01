@@ -20,6 +20,8 @@ rmdir /s "%USERPROFILE%\AppData\Local\nvim\.git"
 
 ## List of my plugins
 <sub><sup>pst I just copied and pasted their about section</sub></sup>
+Plugin Manager:
+lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
 ```
 Comment.nvim (Smart and powerful comment plugin for neovim)
 Luasnip (Snippet Engine for Neovim written in Lua)
@@ -27,7 +29,7 @@ aerial.nvim (A code outline window for skimming and quick navigation)
 blink.cmp (Performant, batteries-included completion plugin for Neovim )
 everforest (🌲 Comfortable & Pleasant Color Scheme for Vim)
 friendly-snippets (Set of preconfigured snippets for different languages)
-lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
+lualine.nvim (A blazing fast and easy to configure neovim statusline plugin)
 mini.splitjoin (Neovim Lua plugin to split and join arguments)
 none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
 nvim-autopairs (autopairs for neovim written in lua)
