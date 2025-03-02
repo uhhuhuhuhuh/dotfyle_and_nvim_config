@@ -29,7 +29,7 @@ return {
                     preset = 'default',
 
                     ["<C-L>"] = { "snippet_forward", "fallback" },
-                    ["<C-E>"] = { "snippet_backward", "fallback" },
+                    ["<C-H>"] = { "snippet_backward", "fallback" },
                     ["<C-J>"] = { "select_next", "fallback" },
                     ['<C-K>'] = { "select_prev", "fallback" },
                     ['<C-C>'] = { "cancel", "fallback" },
@@ -115,30 +115,5 @@ return {
             { "<leader>w", ":Trouble diagnostics toggle<cr>",              desc = "Diagnostics (Trouble)", },
             { "<leader>W", ":Trouble diagnostics toggle filter.buf=0<cr>", desc = "Buffer Diagnostics (Trouble)", },
         }
-    },
-    {
-        "stevearc/aerial.nvim",
-        dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
-        config = function()
-            require("aerial").setup()
-        end,
-
-        keys = {
-            { "<leader>a", ":AerialToggle!<cr>", desc = "Open code outline" },
-            { "{",         ":AerialPrev<CR>",    desc = "Prev point Aerial" },
-            { "}",         ":AerialNext<CR>",    desc = "Next point Aerial" },
-        },
-    },
-    {
-        "echasnovski/mini.splitjoin",
-        config = function()
-            require('mini.splitjoin').setup({
-                mappings = {
-                    toggle = "gs",
-                },
-            })
-        end,
-
-        keys = { { "gs", desc = "Splitjoin" } }
     },
 }

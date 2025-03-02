@@ -25,22 +25,19 @@ lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
 ```
 Comment.nvim (Smart and powerful comment plugin for neovim)
 Luasnip (Snippet Engine for Neovim written in Lua)
-aerial.nvim (A code outline window for skimming and quick navigation)
 blink.cmp (Performant, batteries-included completion plugin for Neovim )
 everforest (🌲 Comfortable & Pleasant Color Scheme for Vim)
 friendly-snippets (Set of preconfigured snippets for different languages)
-lualine.nvim (A blazing fast and easy to configure neovim statusline plugin)
-mini.splitjoin (Neovim Lua plugin to split and join arguments)
 none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
 nvim-autopairs (autopairs for neovim written in lua)
 nvim-lspconfig (Quickstart configs for Nvim LSP)
 nvim-treesitter (Nvim Treesitter configurations and abstraction layer)
 nvim-web-devicons (Provides Nerd Font icons [glyphs] for use by neovim plugins)
 plenary.nvim (All the lua functions I don't want to write twice) basiaclly a neovim library
-telescope.nvim (Find, Filter, Preview, Pick. All lua, all the time.)
+telescope.nvim (Find, Filter, Preview, Pick. All lua, all the time)
 trouble.nvim (🚦pretty diagnostics, quickfix and location list to help you solve all the trouble)
 undotree (The undo history visualizer for VIM)
-vim-fugitive (A Git wrapper so awesome, it should be illegal )
+vim-fugitive (A Git wrapper so awesome, it should be illegal)
 ```
 ## Some useful to know keymappings
 ```
