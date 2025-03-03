@@ -39,7 +39,7 @@ return {
             vim.keymap.set('n', '<leader>D', vim.lsp.buf.definition, { desc = "Goto definition" })
             vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "Perfom code action/quick fix" })
             vim.keymap.set('n', "<leader>r", vim.lsp.buf.rename,
-                { desc = "Rename things: variables, classes, structs, functions" })
+                { desc = "Rename things: variables, classes, structs, functions, etc" })
         end,
     }
 }

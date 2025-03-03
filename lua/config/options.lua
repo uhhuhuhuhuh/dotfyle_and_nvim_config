@@ -26,9 +26,8 @@ vim.opt.scrolloff = 8
 
 vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-
 vim.opt.foldminlines = 150
-vim.opt.foldnestmax = 3
+vim.opt.foldnestmax = 5
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
