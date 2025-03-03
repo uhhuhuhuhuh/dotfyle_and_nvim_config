@@ -35,6 +35,7 @@ nvim-treesitter (Nvim Treesitter configurations and abstraction layer)
 nvim-web-devicons (Provides Nerd Font icons [glyphs] for use by neovim plugins)
 plenary.nvim (All the lua functions I don't want to write twice) basiaclly a neovim library
 telescope.nvim (Find, Filter, Preview, Pick. All lua, all the time)
+todo-comments.nvim (✅ Highlight, list and search todo comments in your projects)
 trouble.nvim (🚦pretty diagnostics, quickfix and location list to help you solve all the trouble)
 undotree (The undo history visualizer for VIM)
 vim-fugitive (A Git wrapper so awesome, it should be illegal)
