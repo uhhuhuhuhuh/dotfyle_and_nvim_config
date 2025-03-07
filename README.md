@@ -31,6 +31,7 @@ friendly-snippets (Set of preconfigured snippets for different languages)
 none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
 nvim-autopairs (autopairs for neovim written in lua)
 nvim-lspconfig (Quickstart configs for Nvim LSP)
+nvim-tree.lua (A File Explorer For Neovim Written In Lua)
 nvim-treesitter (Nvim Treesitter configurations and abstraction layer)
 nvim-web-devicons (Provides Nerd Font icons [glyphs] for use by neovim plugins)
 plenary.nvim (All the lua functions I don't want to write twice) basiaclly a neovim library
@@ -52,7 +53,5 @@ vim-fugitive (A Git wrapper so awesome, it should be illegal)
 ### Extra Plugins(not installed by default/commented out)
 ```
 dashboard-nvim (Fancy and Blazing Fast start screen plugin of neovim)
-nvim-tree.lua (A File Explorer For Neovim Written In Lua)
-toggleterm.nvim (A neovim plugin to persist and toggle multiple terminals)
 nvim-notify (A fancy, configurable, notification manager for NeoVim)
 ```

@@ -77,4 +77,15 @@ return {
             vim.keymap.set('n', "<leader>t", ":Trouble todo<cr>", { desc = "Open todo comments in trouble" })
         end,
     },
+    {
+        "nvim-tree/nvim-tree.lua",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("nvim-tree").setup()
+        end,
+
+        keys = {
+            { "<leader>n", ":NvimTreeToggle<cr>", desc = "Toggles nvim-tree" },
+        },
+    },
 }

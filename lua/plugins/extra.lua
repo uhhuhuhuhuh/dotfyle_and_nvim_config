@@ -7,7 +7,6 @@ return {
             require("dashboard").setup({
                 theme = "doom",
                 config = {
-                    -- trust me this looks good
                     header = {
                         "",
                         "",
@@ -38,8 +37,27 @@ return {
                             keymap = '<leader>f',
                             key_hl = 'Number',
                             action = function()
-                                require("fzf-lua").setup({ "ivy" })
-                                require("fzf-lua").files({ previewer = false })
+                                local actions = require("telescope.actions")
+
+                                require("telescope").setup({
+                                    defaults = {
+                                        preview = false,
+                                        mappings = {
+                                            i = {
+                                                ["<esc>"] = actions.close,
+                                                ["<C-j>"] = actions.move_selection_next,
+                                                ["<C-k>"] = actions.move_selection_previous,
+                                            }
+                                        },
+                                    },
+                                    pickers = {
+                                        find_files = { theme = "ivy", layout_config = { height = 15, }, },
+                                        buffers = { theme = "ivy", layout_config = { height = 15, }, },
+                                        live_grep = { theme = "ivy", layout_config = { height = 15, preview_width = 0.6 }, preview = true },
+                                    },
+                                })
+
+                                require("telescope.builtin").find_files()
                             end
                         },
                         {
@@ -83,43 +101,14 @@ return {
                             desc_hl = "String",
                             key = 'q',
                             key_hl = "Number",
-                            action = ":qa",
+                            action = "qa",
                         },
                     },
                     footer = {}
                 }
             })
         end
-    },
-    ]]
-    --[[
-    {
-        "nvim-tree/nvim-tree.lua",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-        config = function()
-            require("nvim-tree").setup()
-        end,
-
-        keys = {
-            { "<leader>t", ":NvimTreeToggle<cr>", desc = "Toggles nvim-tree" },
-        },
-    },
-    ]]
-    --[[
-    {
-        "akinsho/toggleterm.nvim",
-        cmd = "ToggleTerm",
-        version = '*',
-
-        config = function()
-            require('toggleterm').setup()
-        end,
-        keys = {
-            { "<C-\\>",         ":ToggleTerm<cr>",                            desc = "Toggle Term" },
-            { "<leader><C-\\>", ":ToggleTerm size=55 direction=vertical<cr>", desc = "Toggle Term vertical" }
-        }
-    },
-    ]]
+    }, ]]
     --[[
     {
         "rcarriga/nvim-notify",
@@ -129,6 +118,5 @@ return {
             })
             vim.notify = require('notify')
         end
-    },
-    ]]
+    }, ]]
 }
