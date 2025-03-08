@@ -7,15 +7,11 @@ However it does requires ripgrep(rg) \
 ### Linux && MacOS
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig ~/.config/nvim
-rm ~/.config/nvim/lazy-lock.json
-rm -rf ~/.config/nvim/.git
 ```
 ### Windows
 Use cmd btw
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig "%USERPROFILE%\AppData\Local\nvim"
-del "%USERPROFILE%\AppData\Local\nvim\lazy-lock.json"
-rmdir /s "%USERPROFILE%\AppData\Local\nvim\.git"
 ```
 
 ## List of my plugins
