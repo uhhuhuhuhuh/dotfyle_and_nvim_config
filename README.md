@@ -15,7 +15,7 @@ git clone https://github.com/uhhuhuhuhuh/neovimConfig "%USERPROFILE%\AppData\Loc
 ```
 
 ## List of my plugins
-<sub><sup>pst I just copied and pasted their about section</sub></sup>
+<sub><sup>pst I just copied and pasted their about section</sub></sup> \
 Plugin Manager:
 lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
 ```
