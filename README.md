@@ -95,7 +95,7 @@ keymappings:
 
 <leader>e, normal mode, opens netrw
 
-<leaderl>, normal mode, toggles diagnostic messages
+<leader>l, normal mode, toggles diagnostic messages
 
 <C-L>, insert select modes, Snippet forward
 <C-H>, insert select modes, Snippet backwads
@@ -120,7 +120,7 @@ gbc, normal mode, comment current line using block comment
 gb, visual mode, comment block of text using block comment
 
 <leader>w, normal mode, show diagnostics for all opened files
-<leader>W, normal mode, show diagnostics for current file
+<leader><S-w>, normal mode, show diagnostics for current file
 
 <leader>t, normal mode, show all todo comments
 
