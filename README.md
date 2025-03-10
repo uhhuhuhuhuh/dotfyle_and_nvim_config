@@ -64,6 +64,7 @@ vim-fugitive (A Git wrapper so awesome, it should be illegal)
 ### Extra Plugins(not installed by default/commented out)
 ```
 dashboard-nvim (Fancy and Blazing Fast start screen plugin of neovim)
+lualine.nvim (A blazing fast and easy to configure neovim statusline plugin)
 nvim-notify (A fancy, configurable, notification manager for NeoVim)
 nvim-tree.lua (A File Explorer For Neovim Written In Lua)
 ```
