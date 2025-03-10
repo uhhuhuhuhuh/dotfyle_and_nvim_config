@@ -73,12 +73,22 @@ return {
             vim.keymap.set('n', "<leader>t", ":Trouble todo<cr>", { desc = "Open todo comments in trouble" })
         end,
     },
-    "NeogitOrg/neogit",
-    dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim", },
-    cmd = "Neogit",
-
-    config = function()
-        local neogit = require('neogit')
-        neogit.setup {}
-    end,
+    {
+        "tpope/vim-fugitive",
+        cmd = "Git",
+    },
+    {
+        "kdheepak/lazygit.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        cmd = {
+            "LazyGit",
+            "LazyGitConfig",
+            "LazyGitCurrentFile",
+            "LazyGitFilter",
+            "LazyGitFilterCurrentFile",
+        },
+        keys = {
+            { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+        }
+    }
 }
