@@ -1,6 +1,5 @@
 return {
-    --[[
-    {
+    --[[ {
         'nvimdev/dashboard-nvim',
         event = 'VimEnter',
         config = function()
@@ -109,8 +108,7 @@ return {
             })
         end
     }, ]]
-    --[[
-    {
+    --[[ {
         "rcarriga/nvim-notify",
         config = function()
             require("notify").setup({
@@ -118,5 +116,16 @@ return {
             })
             vim.notify = require('notify')
         end
+    }, ]]
+    --[[     {
+        "nvim-tree/nvim-tree.lua",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("nvim-tree").setup()
+        end,
+
+        keys = {
+            { "<leader>n", ":NvimTreeToggle<cr>", desc = "Toggles nvim-tree" },
+        },
     }, ]]
 }
