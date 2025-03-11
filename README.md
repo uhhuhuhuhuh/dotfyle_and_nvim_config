@@ -69,7 +69,7 @@ nvim-notify (A fancy, configurable, notification manager for NeoVim)
 nvim-tree.lua (A File Explorer For Neovim Written In Lua)
 ```
 ### All keymappings(that aren't basic overides)
-format = mapping, mode(s), description \
+format = mapping, mode(s), description
 
 also leader == space
 keymappings:
