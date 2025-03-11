@@ -69,13 +69,13 @@ nvim-notify (A fancy, configurable, notification manager for NeoVim)
 nvim-tree.lua (A File Explorer For Neovim Written In Lua)
 ```
 ### All keymappings(that aren't basic overides)
-some context:
-<leader> = space
-<C-x> = control x
-<S-x> = shift x
-<esc> = escape
+some context: \
+<leader> = space \
+<C-x> = control x \
+<S-x> = shift x \
+<esc> = escape \
 
-format = mapping, mode(s), description
+format = mapping, mode(s), description \
 
 keymappings:
 ```
