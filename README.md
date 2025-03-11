@@ -71,7 +71,7 @@ nvim-tree.lua (A File Explorer For Neovim Written In Lua)
 ### All keymappings(that aren't basic overides)
 format = mapping, mode(s), description
 
-also leader == space
+also leader == space \
 keymappings:
 ```
 <leader>s, normal mode, float diagnostic message
