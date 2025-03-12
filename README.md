@@ -31,7 +31,7 @@ Syntax highlighting
 
 ## List of my plugins
 <sub><sup>pst I just copied and pasted their about section</sub></sup> \
-Plugin Manager = lazy.nvim (lazy.nvim is a modern plugin manager for Neovim)
+Plugin Manager = lazy.nvim (lazy.nvim is a modern plugin manager for Neovim) \
 Total of 17 plugins(not including plugin manager)
 ```
 Comment.nvim (Smart and powerful comment plugin for neovim)
