@@ -1,6 +1,8 @@
 # my neovim config
 This is my very minimul and optimized config with no ui clutter.\
-optional dependencies: ripgrep
+optional dependencies: ripgrep\
+
+Also comment lines 23-26 in lua/plugines/eyecandy.lua to have a solid background
 
 ![image](https://github.com/uhhuhuhuhuh/dotfyle_and_nvim_config/blob/master/neovim_screenshot.png)
 
