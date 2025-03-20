@@ -14,7 +14,7 @@ return {
         end,
     },
     {
-        "sainnhe/everforest",
+        "neanias/everforest-nvim",
         priority = 1000,
 
         config = function()
