@@ -27,7 +27,6 @@ Fuzzy finding
 Git commands
 LSP intergration
 Language snippets
-Lazygit intergration
 Syntax highlighting
 ```
 
