@@ -32,7 +32,7 @@ Syntax highlighting
 ## List of my plugins
 <sub><sup>pst I just copied and pasted their about section</sub></sup> \
 Plugin Manager = lazy.nvim (lazy.nvim is a modern plugin manager for Neovim) \
-Total of 18 plugins(not including plugin manager)
+Total of 17 plugins(not including plugin manager)
 ```
 Comment.nvim (Smart and powerful comment plugin for neovim)
 Luasnip (Snippet Engine for Neovim written in Lua)
@@ -40,7 +40,6 @@ blink.cmp (Performant, batteries-included completion plugin for Neovim )
 everforest (🌲 Comfortable & Pleasant Color Scheme for Vim)
 friendly-snippets (Set of preconfigured snippets for different languages)
 gitsigns.nvim (Git integration for buffers)
-lazygit.nvim (Plugin for calling lazygit from within neovim)
 none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
 nvim-autopairs (autopairs for neovim written in lua)
 nvim-lspconfig (Quickstart configs for Nvim LSP)
