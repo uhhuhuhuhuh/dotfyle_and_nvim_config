@@ -1,6 +1,6 @@
 # my neovim config
 This is my very minimul and optimized config with no ui clutter.\
-optional dependencies: ripgrep, lazygit
+optional dependencies: ripgrep
 
 ![image](https://github.com/uhhuhuhuhuh/dotfyle_and_nvim_config/blob/master/neovim_screenshot.png)
 
@@ -129,8 +129,6 @@ gb, visual mode, comment block of text using block comment
 <leader><S-w>, normal mode, show diagnostics for current file
 
 <leader>t, normal mode, show all todo comments
-
-<leader>lg, normal mode, open lazygit
 
 <leader>k, normal mode, show documentation for token under cursor
 <C-f>, normal mode, formats your code
