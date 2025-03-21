@@ -38,7 +38,7 @@ return {
                 vim.lsp.with(
                     vim.lsp.handlers.hover,
                     {
-                        border = "single"
+                        border = "rounded"
                     }
                 )
 
