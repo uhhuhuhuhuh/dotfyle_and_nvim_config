@@ -1,58 +1,84 @@
 # my neovim config
 This is my very minimul and optimized config with no ui clutter.\
-optional dependencies: ripgrep
-
-Also comment lines 23-26 in lua/plugins/eyecandy.lua to have a solid background
 
 ![image](https://github.com/uhhuhuhuhuh/dotfyle_and_nvim_config/blob/master/neovim_screenshot.png)
 
+## Features
+* Completion support
+* Easy commenting
+* Fuzzy finding
+* Git intergration
+* LSP intergration
+* Language support
+ 
+btw comment lines 23-26 in lua/plugins/eyecandy.lua to have a solid background
+
 ## Installation
+### Dependencies
+
+#### Needed
+* Neovim >= 0.9.0 version, should be obvious why we need this
+* Git >= 2.19.0 version, for cloning repo
+
+#### Optional
+* A Nerd Font, for symbols
+* Ripgrep, for search through text
+
 ### Linux && MacOS
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
-### Windows
-Use cmd btw
+### Windows (cmd.exe)
 ```
 git clone https://github.com/uhhuhuhuhuh/neovimConfig "%USERPROFILE%\AppData\Local\nvim"
 rmdir /S %USERPROFILE%\AppData\Local\nvim\.git
 ```
 
-## Features
-```
-Completion support
-Easy commenting
-Fuzzy finding
-Git commands
-LSP intergration
-Language snippets
-Syntax highlighting
-```
 
-## List of my plugins
-<sub><sup>pst I just copied and pasted their about section</sub></sup> \
-Plugin Manager = lazy.nvim (lazy.nvim is a modern plugin manager for Neovim) \
-Total of 17 plugins(not including plugin manager)
-```
-Comment.nvim (Smart and powerful comment plugin for neovim)
-Luasnip (Snippet Engine for Neovim written in Lua)
-blink.cmp (Performant, batteries-included completion plugin for Neovim )
-everforest (🌲 Comfortable & Pleasant Color Scheme for Vim)
-friendly-snippets (Set of preconfigured snippets for different languages)
-gitsigns.nvim (Git integration for buffers)
-none-ls (Use Neovim as a language server to inject LSP diagnostics, code actions, and more)
-nvim-autopairs (autopairs for neovim written in lua)
-nvim-lspconfig (Quickstart configs for Nvim LSP)
-nvim-treesitter (Nvim Treesitter configurations and abstraction layer)
-nvim-web-devicons (Provides Nerd Font icons for use by neovim plugins)
-plenary.nvim (All the lua functions I don't want to write twice) basically a neovim library
-telescope.nvim (Find, Filter, Preview, Pick. All lua, all the time)
-todo-comments.nvim (✅ Highlight, list and search todo comments in your projects)
-trouble.nvim (🚦pretty diagnostics, quickfix and location list to help you solve all the trouble)
-undotree (The undo history visualizer for VIM)
-vim-fugitive (A Git wrapper so awesome, it should be illegal)
-```
+## Plugins
+
+### Plugin Manager
+*   [lazy.nvim](https://github.com/folke/lazy.nvim) (💤 A modern plugin manager)
+   
+### Look
+*   [everforest](https://github.com/sainnhe/everforest) (🌲 Comfortable & Pleasant Color Scheme)
+*   [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) (Provides Nerd Font icons for use by neovim plugins)
+*   [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Nvim Treesitter configurations and abstraction layer)
+
+### LSP and Completions
+*   [none-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) (Inject LSP diagnostics, code actions, and more)
+*   [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) (Quickstart configs for Nvim LSP)
+*   [blink.cmp](https://github.com/Saghen/blink.cmp) (Performant,batteries-included completion plugin)
+*   [LuaSnip](https://github.com/L3MON4D3/LuaSnip) (Snippet Engine for Neovim written in Lua)
+*   [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) (preconfigured snippets for different languages)
+
+### Editing Support
+
+#### Generic Support
+
+*   [nvim-autopairs](https://github.com/windwp/nvim-autopairs) (autopairs for neovim written in lua)
+
+#### Commenting
+
+*   [Comment.nvim](https://github.com/numToStr/Comment.nvim) (🧠 💪 // Smart and powerful comment plugin)
+*   [todo-comments.nvim](https://github.com/folke/todo-comments.nvim) (✅ Highlight, list and search todo comments)
+
+
+### Tools
+
+*   [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (Find, Filter, Preview, Pick. All lua, all the time)
+
+*   [trouble.nvim](https://github.com/folke/trouble.nvim) (🚦 A pretty diagnostics, references, quickfix, and more to help you solve all the trouble your code is causing)
+
+*   [undotree](https://github.com/mbbill/undotree) (The undo history visualizer for VIM)
+   
+### Git
+
+*   [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) (Git integration for buffers)
+
+*   [vim-fugitive](https://github.com/tpope/vim-fugitive) (A Git wrapper so awesome, it should be illegal)
+
 ## Some useful to know keymappings
 ```
 <leader>f = Searches files
@@ -63,10 +89,7 @@ vim-fugitive (A Git wrapper so awesome, it should be illegal)
 <leader>s = Makes the diagnostics message under your mouse turn into a floating window
 ```
 ### All keymappings(that aren't basic overides)
-format = mapping, mode(s), description
-
-also leader == space \
-keymappings:
+mapping, mode(s), description
 ```
 <leader>s, normal mode, float diagnostic message
 
