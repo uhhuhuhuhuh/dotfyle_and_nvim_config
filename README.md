@@ -62,22 +62,6 @@ vim-fugitive (A Git wrapper so awesome, it should be illegal)
 <C-p> = Paste from system clipboard
 <leader>s = Makes the diagnostics message under your mouse turn into a floating window
 ```
-### Extra Plugins(not installed by default/commented out)
-in lua/plugins/extra.lua
-```
-dashboard-nvim (Fancy and Blazing Fast start screen plugin of neovim)
-lualine.nvim (A blazing fast and easy to configure neovim statusline plugin)
-nvim-notify (A fancy, configurable, notification manager for NeoVim)
-nvim-tree.lua (A File Explorer For Neovim Written In Lua)
-```
-Extra Colorschemes(in lua/plugins/eyecandy.lua):
-```
-ashen.nvim (A warm, muted colorscheme with red, orange, and lots of grayscale)
-catppuccin (🍨 Soothing pastel theme)
-nordic.nvim (🌒 Nord for Neovim, but warmer and darker)
-onedark.nvim (One dark colorscheme for neovim based on Atom's One Dark)
-tokyonight.nvim (🏙 A clean, dark Neovim theme written in Lua)
-```
 ### All keymappings(that aren't basic overides)
 format = mapping, mode(s), description
 
