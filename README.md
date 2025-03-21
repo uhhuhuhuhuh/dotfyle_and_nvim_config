@@ -2,7 +2,7 @@
 This is my very minimul and optimized config with no ui clutter.\
 optional dependencies: ripgrep
 
-Also comment lines 23-26 in lua/plugines/eyecandy.lua to have a solid background
+Also comment lines 23-26 in lua/plugins/eyecandy.lua to have a solid background
 
 ![image](https://github.com/uhhuhuhuhuh/dotfyle_and_nvim_config/blob/master/neovim_screenshot.png)
 
@@ -27,7 +27,6 @@ Fuzzy finding
 Git commands
 LSP intergration
 Language snippets
-Lazygit intergration
 Syntax highlighting
 ```
 
