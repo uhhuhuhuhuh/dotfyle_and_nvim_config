@@ -83,10 +83,10 @@ rmdir /S %USERPROFILE%\AppData\Local\nvim\.git
 ```
 <leader>f = Searches files
 <leader>b = Searches buffers
-<leader>g = Grep/find text
+<leader>h = Search normal and hidden files
+<leader>g = Find text
 <leader>y = Copy to clipboard
 <C-p> = Paste from system clipboard
-<leader>s = Makes the diagnostics message under your mouse turn into a floating window
 ```
 ### All keymappings(that aren't basic overides)
 mapping, mode(s), description

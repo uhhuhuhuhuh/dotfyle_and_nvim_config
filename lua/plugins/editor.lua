@@ -28,6 +28,13 @@ return {
 
         keys = {
             { "<leader>f", function() require("telescope.builtin").find_files() end, desc = "Find Files" },
+            {
+                "<leader>h",
+                function()
+                    require("telescope.builtin").find_files({ theme = "ivy", layout_config = { height = 15, }, hidden = true, no_ignore = true, })
+                end,
+                desc = "Find Hidden Files"
+            },
             { "<leader>b", function() require("telescope.builtin").buffers() end,    desc = "Find Buffers" },
             { "<leader>g", function() require("telescope.builtin").live_grep() end,  desc = "Grep Text" },
         },
